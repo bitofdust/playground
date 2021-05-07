@@ -1,0 +1,74 @@
+bib where location = AND b3 != n
+
+{
+  "queries": [
+    {
+      "target": {
+        "record": {
+          "type": "bib"
+        },
+        "id": 26
+      },
+      "expr": [
+        {
+          "op": "equals",
+          "operands": [
+            "garc "
+          ]
+        },
+        "or",
+        {
+          "op": "equals",
+          "operands": [
+            "grbr "
+          ]
+        },
+        "or",
+        {
+          "op": "equals",
+          "operands": [
+            "grbrf"
+          ]
+        },
+        "or",
+        {
+          "op": "equals",
+          "operands": [
+            "grbro"
+          ]
+        },
+        "or",
+        {
+          "op": "equals",
+          "operands": [
+            "grbrs"
+          ]
+        },
+        "or",
+        {
+          "op": "equals",
+          "operands": [
+            "grbrt"
+          ]
+        }
+      ]
+    },
+    "and",
+    {
+      "target": {
+        "record": {
+          "type": "bib"
+        },
+        "id": 31
+      },
+      "expr": [
+        {
+          "op": "not_equal",
+          "operands": [
+            "n"
+          ]
+        }
+      ]
+    }
+  ]
+}
